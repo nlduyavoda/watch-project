@@ -17,7 +17,7 @@ class ProductsController {
 
           //[Get]/products/create
           create(req, res,next) {       
-                res.render('products/create')       
+                res.render('productss/create')       
         }
           //[Get]/products/:id/edit
         edit(req, res,next) {       
@@ -33,7 +33,7 @@ class ProductsController {
             .then(() =>res.redirect('/list/stored/products'))
             .catch(next)
         } 
-        //[put]/products/:id/
+        //[delete]/products/:id/
         destroy(req, res,next) {       
             Products.deleteOne({_id: req.params.id})
             .then(() =>res.redirect('back'))
