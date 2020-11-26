@@ -1,6 +1,7 @@
 
 const{mongooseToObject} = require('../../util/mongoose');
 const Products = require('../models/Products');
+const Cart = require('../models/cart');
 
 
 
@@ -17,7 +18,7 @@ class ProductsController {
 
           //[Get]/products/create
           create(req, res,next) {       
-                res.render('productss/create')       
+                res.render('products/create')       
         }
           //[Get]/products/:id/edit
         edit(req, res,next) {       
@@ -47,6 +48,20 @@ class ProductsController {
                     .catch(error => {
         
                     });
+        }
+        cart(req,res){
+                var productId = req.params.id
+                var cart  =new cart(req.session.cart ? req.session.cart:{})
+                
+                Products.findById(productId,function(err,Products){ 
+                    if (err){
+                        return res.redirect('/')
+                    }
+                    cart.add(Products,Products.id)
+                    req.session.cart = cart
+                    console.log(req.session.cart)
+                    res.redirect('/')
+                })
         }
 
     }
