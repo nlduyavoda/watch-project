@@ -1,4 +1,4 @@
-<div class="mt-4">
+{{!-- <div class="mt-4">
     <div class="row">
                      {{#each products}}
                     <div class="col-sm-6 col-lg-4">
@@ -12,7 +12,6 @@
                              <a href="products/{{this.slug}}"><h5 class="card-title">{{this.name}}</h5></a>
                  
                             <p class="card-text">{{this.descrtipstion}}</p>
-                          <a href="/{{products._id}}" class="btn btn-success" role="button">add to cart</a>
                             <a href="#" class="btn btn-primary">Buy it</a>
                         </div>
                         </div>
@@ -20,4 +19,49 @@
                     </div>
            {{/each}}
     </div>
-</div>
+</div> --}}
+
+
+
+
+<div class="grid wide">
+            <div class="row no-gutters">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="tabb">
+                            <h4 class="tab__title">Gợi ý hôm nay </h4>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+                <div class="row sm-gutter">
+                    {{#each products}}
+                        <div class="col l-2 m-4 c-6">
+                                
+                                <a href="products/{{this.slug}}" class="product__link">
+                                    
+                                    <div class="product">
+                                        <div class="product__list">
+                                            <img src="{{this.images}}" alt="" class="product__img">
+                                            <div class="product__img-favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu Thích</span>
+                                            </div>
+                                        </div>
+                                        
+                                    
+                                        <div class="product_profile">
+                                                <div class="product__title">{{this.name}}</div>
+                                                <div class="product__price">
+                                                    <p class="product__price--one">{{this.price}}</p>
+                                                    <p class="product__price--two">Đã bán 73</p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                        </div>
+                     {{/each}}   
+                        
+                </div>
+    </div>

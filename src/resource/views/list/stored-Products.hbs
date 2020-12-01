@@ -1,9 +1,10 @@
-<div class="mt-4">
+{{!-- <div class="mt-4">
   <table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
       <th scope="col">name</th>
+      <th scope="col">price</th>
       <th scope="col">image</th>
       <th scope="col">description</th>
     </tr>
@@ -12,7 +13,8 @@
     {{#each products}}
     <tr>
       <th scope="row">{{sum @index 1}}</th>
-      <td>{{this.name}}</td>    
+      <td>{{this.name}}</td>  
+        <td>{{this.price}}</td>  
          <td>{{this.images}}</td>    
             <td>{{this.descrtipstion}}</td>    
             <td>
@@ -25,7 +27,55 @@
     {{/each}}
   </tbody>
 </table>
-</div>
+</div> --}}
+
+<!-- CONTENT -->
+  <div class="content">
+    <div class="product">
+      <button  onclick="openModal('modal1')" class="btn btn-create">Create</button>
+    </div>
+   <div class="tableadmin">
+        <table class="table">
+            <thead>
+              <tr>
+                <th class="table__heading" scope="col">ID</th>
+                <th class="table__heading" scope="col">HÌNH ẢNH	</th>
+                <th class="table__heading" scope="col">TÊN SẢN PHẢM	</th>
+                <th class="table__heading" scope="col">GIÁ	</th>
+                <th class="table__heading" scope="col">ĐÃ BÁN	</th>
+                <th class="table__heading" scope="col">
+                  
+                </th>
+
+              </tr>
+            </thead>
+            <tbody id="table__body">
+               {{#each products}}
+              <tr>
+                <td class="table__content">{{sum @index 1}}</td>
+                <td class="table__content">
+                  <img src="{{this.images}}" alt="" class="table__content-img">
+                </td>
+                <td class="table__content">{{this.name}}</td>
+                <td class="table__content">{{this.price}}</td>
+                <td class="table__content">{{this.descrtipstion}}</td>
+                <td class="table__content">
+                    <button class=" btn-delete"><a data-toggle="modal" data-id="{{this._id}}"  data-target="#delete-product-modal">remove</a></button>
+
+                    <button class=" btn-delete"><a href="/products/{{this._id}}/edit" >edit</a></button>
+                    
+
+                </td>
+                
+              </tr>
+              {{/each}}
+             
+            </tbody>
+          </table>
+    </div>
+    
+       
+  </div>
 
 <!-- confirm delete modal -->
 <div id="delete-product-modal" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
