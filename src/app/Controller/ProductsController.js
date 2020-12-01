@@ -7,7 +7,7 @@ class ProductsController {
   show(req, res, next) {
     Products.findOne({ slug: req.params.slug })
       .then((products) =>
-        res.render("products/show", { products: mongooseToObject(products) })
+        res.render("products/show", { products: mongooseToObject(products), layout: 'detail.hbs' })
       )
       .catch(next);
   }

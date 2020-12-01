@@ -17,7 +17,9 @@ header {
   height: var(--height-header);
   background-image: var(--color--shop);
 }
-
+.container__shopee{
+  margin-top: var(--height-header);
+}
 .header__navbar {
   display: flex;
   flex-direction: column;

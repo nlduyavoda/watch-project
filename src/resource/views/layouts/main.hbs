@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/app.css">
+    <title>Shopee Việt Nam - Trang Thương Mại Điện Tử </title>
     <!-- CSS  -->
+   
     <link rel="stylesheet" href="http://localhost:3001/css/style.css">
     <link rel="stylesheet" href="http://localhost:3001/css/base.css">
     <link rel="stylesheet" href="http://localhost:3001/css/responsive.css">
-    <link rel="stylesheet" href="http://localhost:3001/css/admin.css">
-
-   <!-- FONT Google -->
+    
+    <!-- FONT Google -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
      <!-- ICON -->
      <script src="https://kit.fontawesome.com/30d0043b0e.js"></script>
@@ -20,23 +19,282 @@
     <!-- SLIDER -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-
-    
-    <title>Document</title>
 </head>
 <body>
 
        {{> Header}}
-                <div class="navbar__color">
+                <div class="container__shopee">
+                    <!-- Hiển thi carousel  -->
+        
+        <div class="sliderr">
+            <div class="grid wide">
+               <div class="row">
+                    <div class="l-8 c-12 m-12">
+                            <div style="width:100%;" class="single-item">
+                                    <div class="img__slider" style="background-image: url(https://cf.shopee.vn/file/f7e736dcba2b948d5610e6e125e61fef_xxhdpi);"></div>
+                                    <div class="img__slider" style="background-image: url(https://cf.shopee.vn/file/2e3e603ca352b19fd93f2d75f9ebf71f_xxhdpi);"></div>
+                                    <div class="img__slider" style="background-image: url(https://cf.shopee.vn/file/cd58c25531faa536ff5521881e6e5ada_xxhdpi);"></div>
+                            </div>
+                    </div>
+                    <div class="l-4 c-0">
+                            <div class="sliderright">
+                                    <div class="sliderright-top">
+                                        <img src="https://cf.shopee.vn/file/6dadc3161702f2f60b2230212859469b_xhdpi" alt="">
+                                    </div>
+                                    <div class="sliderright-bot">
+                                        <img src="https://cf.shopee.vn/file/05212d77074b4ffb9c8894761dd5c386_xhdpi" alt="">
+                                    </div>
+                                </div>
+                    </div>
+               </div>
+                   
+            </div>
+        </div>
+         <!-- Hiển thị danh mục sản phẩm  -->
+    <div class="menubody">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12">
+                            <h3 class="menubody__heading">DANH MỤC SẢN PHẨM</h3>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col l-2 m-3 c-3">
+                        <div class="menubody__box">
+                            <img src="https://cdn.fitin.vn/cms-ecom/images/2020/04/27/1-ban-1587981900.jpg" alt="" class="menubody__box-img">
+                            <p class="menubody__box-title">Bàn</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-3">
+                        <div class="menubody__box">
+                            <img src="https://cdn.fitin.vn/cms-ecom/images/2020/04/27/2-ghe-1587981944.jpg" alt="" class="menubody__box-img">
+                            <p class="menubody__box-title">Ghế</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-3">
+                        <div class="menubody__box">
+                            <img src="https://cdn.fitin.vn/cms-ecom/images/2020/04/27/3-ke-1587981966.jpg" alt="" class="menubody__box-img">
+                            <p class="menubody__box-title">Kệ</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-3">
+                        <div class="menubody__box">
+                            <img src="https://cdn.fitin.vn/cms-ecom/images/2020/04/27/4-tu-1587981995.jpg" alt="" class="menubody__box-img">
+                            <p class="menubody__box-title">Tủ</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-3">
+                        <div class="menubody__box">
+                            <img src="https://cdn.fitin.vn/cms-ecom/images/2020/04/27/5-sofa-1587982024.jpg" alt="" class="menubody__box-img">
+                            <p class="menubody__box-title">Sofa</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-3">
+                        <div class="menubody__box">
+                            <img src="https://cdn.fitin.vn/cms-ecom/images/2020/04/27/6-giuong-1587982051.jpg" alt="" class="menubody__box-img">
+                            <p class="menubody__box-title">Giường</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-3">
+                        <div class="menubody__box">
+                            <img src="https://cdn.fitin.vn/cms-ecom/images/2020/04/24/7-kitchen-1587716252.jpg" alt="" class="menubody__box-img">
+                            <p class="menubody__box-title">Đồ Gia Dụng</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-3">
+                        <div class="menubody__box">
+                            <img src="https://cdn.fitin.vn/cms-ecom/images/2020/04/27/8-den-1587982122.jpg" alt="" class="menubody__box-img">
+                            <p class="menubody__box-title">Đèn</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-3">
+                        <div class="menubody__box">
+                            <img src="https://cdn.fitin.vn/cms-ecom/images/2020/04/27/9-lo-trang-tri-1587982150.jpg" alt="" class="menubody__box-img">
+                            <p class="menubody__box-title">Lọ Trang Trí</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-3">
+                        <div class="menubody__box">
+                            <img src="https://cdn.fitin.vn/cms-ecom/images/2020/04/27/10-guong-1587982173.jpg" alt="" class="menubody__box-img">
+                            <p class="menubody__box-title">Gương</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-3">
+                        <div class="menubody__box">
+                            <img src="https://cdn.fitin.vn/cms-ecom/images/2020/04/27/11-thungrac-1587982194.jpg" alt="" class="menubody__box-img">
+                            <p class="menubody__box-title">Thùng Rác</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-3">
+                        <div class="menubody__box">
+                            <img src="https://cdn.fitin.vn/cms-ecom/images/2020/04/27/12-bosanpham-1587982214.jpg" alt="" class="menubody__box-img">
+                            <p class="menubody__box-title">Bộ Sản Phẩm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+         <!-- Hiển thị sản phẩm bán chạy -->
+    <div class="dealhot">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="dealhot__abc">
+                            <h3 class="dealhot__heading">TOP SẢN PHẨM BÁN CHẠY</h3>
+                            <div class="containerr">
+                        
+                                    <div id="countdown">
+                                      <ul>
+                                        <li><span id="days"></span>days</li>
+                                        <li><span id="hours"></span>Hours</li>
+                                        <li><span id="minutes"></span>Minutes</li>
+                                        <li><span id="seconds"></span>Seconds</li>
+                                      </ul>
+                                    </div>
+                                    <div class="message">
+                                      <div id="content">
+                                        <span class="emoji">🥳</span>
+                                        <span class="emoji">🎉</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="row-design">
+                <div class="col c-mydesign ">
+                    <div id="dealhot-form1" class="dealhot__item">
+                        <div class="dealhot__item-boximg">
+                                <img src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/product-tmp/2020/06/12/bo-ban-an-4-ghe-cacao-mau-tu-nhien-2-1591927021.jpg" alt="" class="dealhot__item-img">
+                                <div class="dealhot__item-hashtag">Sale 20%</div>
+                        </div>
+                        
+                        <div class="dealhot__profile">
+                                <div class="mobile-0 dealhot__listimg">
+                                        <img id="oneImg"  src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/09/11/hp6-5711-1599788528.jpg" alt="" class="dealhot__listimg-item selectImg">
+                                        <img id="twoImg" src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/09/11/hp6-5729-1599788526.jpg" alt="" class="dealhot__listimg-item">
+                                        <img id="threeImg" src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/09/11/hp6-5731-1599788527.jpg" alt="" class="dealhot__listimg-item">
+                                        <img id="fourImg" src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/09/07/hp6-5733-1599457729.jpg" alt="" class="dealhot__listimg-item">
+                                    </div>
+                                    <h3 class="dealhot__title">Bộ Bàn Ăn 4 Ghế IBIE Cacao Màu Trắng Mặt Veneer Gỗ Tự Nhiên</h3>
+                                    <p class="dealhot__price">150,000d</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col c-mydesign ">
+                        <div id="dealhot-form2" class="dealhot__item">
+                            <div class="dealhot__item-boximg">
+                                    <img id="mainImg" src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/product-tmp/2020/06/08/axa-1591598042.jpg" alt="" class="dealhot__item-img">
+                                    <div class="dealhot__item-hashtag">Sale 40%</div>
+                            </div>
+                            
+                            <div class="dealhot__profile">
+                                    <div class="mobile-0 dealhot__listimg">
+                                            <img id="oneImg"  src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/product-tmp/2020/06/08/axa-1591598042.jpg" alt="" class="dealhot__listimg-item selectImg">
+                                            <img id="twoImg"  src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/08/19/abc-1597830687-1597830822.jpg" alt="" class="dealhot__listimg-item">
+                                            <img id="threeImg"  src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/08/19/abc-1597830378-1597830822.jpg" alt="" class="dealhot__listimg-item">
+                                            <img id="fourImg"  src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/08/19/abc-1597830672-1597830822.jpg" alt="" class="dealhot__listimg-item">
+                                        </div>
+                                        <h3 class="dealhot__title">Bộ Bàn Ăn 4 Ghế IBIE Cacao Màu Trắng Mặt Veneer Gỗ Tự Nhiên</h3>
+                                        <p class="dealhot__price">150,000d</p>
+                            </div>
+                           
+                        </div>
+                </div>
+                <div class="col c-mydesign ">
+                        <div id="dealhot-form3" class="dealhot__item">
+                            <div class="dealhot__item-boximg">
+                                    <img src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/product-tmp/2020/06/24/lpprvmp-1592980805.jpg" alt="" class="dealhot__item-img">
+                                    <div class="dealhot__item-hashtag">Sale 10%</div>
+                            </div>
+                            
+                            <div class="dealhot__profile">
+                                    <div class="mobile-0 dealhot__listimg">
+                                            <img id="oneImg" src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/product-tmp/2020/06/24/lpprvmp-1592980805.jpg" alt="" class="dealhot__listimg-item selectImg">
+                                            <img id="twoImg" src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/06/29/67149293-33673088-npng3ruq-1593395997.jpg" alt="" class="dealhot__listimg-item">
+                                            <img id="threeImg" src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/06/29/dsc02392jpgh-1593395923.jpg" alt="" class="dealhot__listimg-item">
+                                            <img id="fourImg" src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/06/29/abc-1593395970.jpg" alt="" class="dealhot__listimg-item">
+                                        </div>
+                                        <h3 class="dealhot__title">Bộ Bàn Ăn 4 Ghế IBIE Cacao Màu Trắng Mặt Veneer Gỗ Tự Nhiên</h3>
+                                        <p class="dealhot__price">150,000d</p>
+                            </div>
+                           
+                        </div>
+                </div>
+                <div class="col c-mydesign">
+                        <div id="dealhot-form4" class="dealhot__item">
+                            <div class="dealhot__item-boximg">
+                                    <img src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/07/13/z1378450146009-ea3863fa068f46f83ae84d87f8963170-1594614663.jpg" alt="" class="dealhot__item-img">
+                                    <div class="dealhot__item-hashtag">Sale 20%</div>
+                            </div>
+                            
+                            <div class="dealhot__profile">
+                                    <div class="mobile-0 dealhot__listimg">
+                                            <img id="oneImg" src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/07/13/z1378450146009-ea3863fa068f46f83ae84d87f8963170-1594614663.jpg" alt="" class="dealhot__listimg-item selectImg">
+                                            <img id="twoImg" src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/09/08/290050037291-ban-tra-1-1599538027.jpg" alt="" class="dealhot__listimg-item">
+                                            <img id="threeImg" src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/09/08/290050037291-ban-tra-2-1599538028.jpg" alt="" class="dealhot__listimg-item">
+                                            <img id="fourImg" src="https://cdn.fitin.vn/cms-ecom/thumbs/300x300/images/2020/07/13/o1cn01ljlsex2bpkjpjfxfz-2653808388-1594614663.jpg" alt="" class="dealhot__listimg-item">
+                                        </div>
+                                        <h3 class="dealhot__title">Bộ Bàn Ăn 4 Ghế IBIE Cacao Màu Trắng Mặt Veneer Gỗ Tự Nhiên</h3>
+                                        <p class="dealhot__price">150,000d</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
                     {{{body}}}
-
+                    
                 </div>
  
         {{> footer}}
    
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.single-item').slick({
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });;
+    });
+    $('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+  </script>
 </body>
 </html>

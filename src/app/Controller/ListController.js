@@ -8,7 +8,8 @@ class ListController {
       .then((products) => {
         res.render("list/stored-Products", {
           products: mutipleMongooseToObject(products),
-        });
+          layout: 'admin.hbs'
+        },);
       })
       .catch(next);
   }
