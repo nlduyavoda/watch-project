@@ -30,9 +30,12 @@
 </div> --}}
 
 <!-- CONTENT -->
-  <div class="content">
+ 
     <div class="product">
-      <button  onclick="openModal('modal1')" class="btn btn-create">Create</button>
+      <a href="/products/create">
+          <button  onclick="openModal('modal1')" class="btn btn-create">Create</button>
+
+      </a>
     </div>
    <div class="tableadmin">
         <table class="table">
@@ -60,9 +63,13 @@
                 <td class="table__content">{{this.price}}</td>
                 <td class="table__content">{{this.descrtipstion}}</td>
                 <td class="table__content">
-                    <button class=" btn-delete"><a data-toggle="modal" data-id="{{this._id}}"  data-target="#delete-product-modal">remove</a></button>
+                    <button class=" btn-delete"><a data-toggle="modal" data-id="{{this._id}}"  data-target="#delete-product-modal">emove</a></button>
 
-                    <button class=" btn-delete"><a href="/products/{{this._id}}/edit" >edit</a></button>
+                    
+                    <a href="/products/{{this._id}}/edit" ><button class=" btn-edit">
+                      
+                      <i class="fas fa-pen"></i></button></a>
+                    
                     
 
                 </td>
@@ -75,7 +82,7 @@
     </div>
     
        
-  </div>
+
 
 <!-- confirm delete modal -->
 <div id="delete-product-modal" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

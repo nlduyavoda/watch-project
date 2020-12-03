@@ -14,13 +14,13 @@ class ProductsController {
 
   //[Get]/products/create
   create(req, res, next) {
-    res.render("products/create");
+    res.render("products/create",{layout: 'admin.hbs'});
   }
   //[Get]/products/:id/edit
   edit(req, res, next) {
     Products.findById(req.params.id)
       .then((products) =>
-        res.render("products/edit", { products: mongooseToObject(products) })
+        res.render("products/edit", { products: mongooseToObject(products),layout: 'admin.hbs' })
       )
       .catch(next);
   }
@@ -50,7 +50,7 @@ class ProductsController {
 
     Products.findById(productId, function (err, Products) {
       if (err) {
-        return res.redirect("/",'detail.hbs');
+        return res.redirect("/");
       }
       cart.add(Products, Products.id);
       req.session.cart = cart;

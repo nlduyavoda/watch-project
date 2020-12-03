@@ -1,4 +1,4 @@
-<div class="mt-4">
+{{!-- <div class="mt-4">
         <form method="POST" action="/products/store">
             <div class="form-group">
                 <label for="name">name</label>
@@ -22,4 +22,36 @@
             </div>
             <button type="submit" class="btn btn-primary">Add products</button>
     </form>
-</div>
+</div> --}}
+
+
+<form action="/products/store" method="POST" class="form" id="form-1">
+                    <h3 class="heading">Thêm Mới Sản Phẩm</h3>
+                    
+                
+                    <div class="spacer"></div>
+                    <div class="form-group">
+                        <label for="img_product" class="form-label">Hình Ảnh:</label>
+                        <input id="images" name="images" type="text" placeholder="VD: url..." class="form-control">
+                        <span class="form-message"></span>
+                      </div>
+                    <div class="form-group">
+                      <label for="name_product" class="form-label">Tên Sản Phẩm:</label>
+                      <input id="name" name="name" type="text" placeholder="VD: Giá Đỡ..." class="form-control">
+                      <span class="form-message"></span>
+                    </div>
+                
+                    <div class="form-group">
+                      <label for="price_product" class="form-label">Giá Sản Phẩm:</label>
+                      <input id="price" name="price" type="text" placeholder="VD: 89.000đ" class="form-control">
+                      <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="sold" class="form-label">Mô tả:</label>
+                        <input id="descrtipstion" name="descrtipstion" type="text" placeholder="VD: 89.000đ" class="form-control">
+                        <span class="form-message"></span>
+                      </div>
+                
+                
+                    <button id="submit" onclick="createProduct()" class="form-submit">Thêm Sản Phẩm</button>
+                  </form>

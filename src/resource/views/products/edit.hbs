@@ -1,4 +1,4 @@
-<div class="mt-4 ">
+{{!-- <div class="mt-4 ">
         <form method="POST" action="/products/{{products._id}}?_method=PUT">
             <div class="form-group">
                 <label for="name">name</label>
@@ -21,5 +21,38 @@
                 <input type="text" class="form-control" value="{{products.slug}}" id="slug" name="slug">
             </div>
             <button type="submit" class="btn btn-primary">Save</button>
-    </form>
-</div>
+        </form>
+</div> --}}
+
+
+
+<form action="/products/{{products._id}}?_method=PUT" method="POST" class="form" id="form-2">
+              <h3 class="heading">Chỉnh sửa Sản Phẩm</h3>
+              
+          
+              <div class="spacer"></div>
+              <div class="form-group">
+                  <label for="img_product-edit" class="form-label">Hình Ảnh:</label>
+                  <input id="img_product-edit" value="{{products.images}}" name="img_product-edit"  type="text" placeholder="VD: url..." class="form-control">
+                  <span class="form-message"></span>
+                </div>
+              <div class="form-group">
+                <label for="name_product-edit" class="form-label">Tên Sản Phẩm:</label>
+                <input id="name_product-edit" value="{{products.name}}" name="name_product-edit" type="text" placeholder="VD: Giá Đỡ..." class="form-control">
+                <span class="form-message"></span>
+              </div>
+          
+              <div class="form-group">
+                <label for="price_product-edit" class="form-label">Giá Sản Phẩm:</label>
+                <input id="price_product-edit" value="{{products.price}}" name="price_product-edit" type="text" placeholder="VD: 89.000đ" class="form-control">
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                  <label for="sold-edit" class="form-label">Mô tả:</label>
+                  <input id="sold-edit" name="sold-edit" value="{{products.descrtipstion}}" type="text" placeholder="VD: 89.000đ" class="form-control">
+                  <span class="form-message"></span>
+                </div>
+          
+          
+              <button id="submit-edit" onclick="createProduct()" class="form-submit">Sửa Sản Phẩm</button>
+            </form>
