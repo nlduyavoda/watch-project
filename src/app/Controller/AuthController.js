@@ -19,7 +19,9 @@ class AuthController {
       csrfToken: req.csrfToken(),
       messages: messages,
       hasError: messages.length > 0,
-    });
+      layout: 'detail.hbs'
+    }
+    );
   }
   profile(req, res, next) {
     res.render("auth/profile");

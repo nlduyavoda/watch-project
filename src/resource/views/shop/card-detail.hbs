@@ -1,4 +1,4 @@
-{{#if products}}
+{{!-- {{#if products}}
 <div  class="row">
  <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
      <ul class="list-group"> 
@@ -43,4 +43,88 @@
          No item in cart
      </h2>     </div>
 </div>
-{{/if}}
+{{/if}} --}}
+
+
+<main class="container">
+        <div class="carttable">
+            <div class="grid wide">
+                <div class="row">
+                    <section class="bartable">
+                        <p class="bartable__heading">
+                                Sản Phẩm
+                        </p>
+                        <p class="bartable__heading">
+                                Đơn Giá
+                        </p>
+                        <p class="bartable__heading">
+                                Số Lượng
+                        </p>
+                        <p class="bartable__heading">
+                                Số Tiền
+                        </p>
+                        <p class="bartable__heading">
+                                Thao Tác
+                        </p>
+                    </section>
+                    <table style="width:100%">
+                        {{#if products}}
+                        {{#each products}}
+                        <tr class="carttable__item">
+                          <td class="carttable__item-font">
+                              <div class="item_table">
+                                <img src="{{this.item.images}}" alt="">
+                                <p>{{this.item.name}}</p>
+
+                              </div>
+                            </td>
+                          <td class="carttable__item-font">{{this.item.price}}</td>
+                          <td class="carttable__item-font">
+                            <div class="amount__button">
+                                <button class="pre btn-amount">
+                                    -
+                                </button>
+                                <input class="amount__button-input" type="text" value="{{this.qty}}">
+                                <button class="next btn-amount">
+                                    +
+                                </button>
+                            </div>
+                          </td>
+                          {{!-- tongtiensanpham --}}
+                          <td class="carttable__item-font">{{this.item.price}}</td> 
+                          <td class="carttable__item-font">Xoá</td>
+
+
+                        </tr>
+                        {{/each}}
+                        {{/if}}
+                        
+                    </table>
+                    <section class="footertable">
+                        <div class="footertable__codeship">
+                            <div class="codeship__box">
+                                    <img src="http://demo.shop.tickid.vn/assets/images/coupon.png" alt="" class="footertable__codeship-icon">
+                                    <p class="footertable__codeship-code">Mã giảm giá
+                                            (Đăng nhập để sử dụng mã giảm giá)</p>
+                            </div>
+                            <p class="footertable__codeship-price">Phí Ship : Chưa tính</p>        
+                        </div>
+                        <div class="footertable__line"></div>
+                        <div class="footertable__buy">
+                           <div class="buytotal">
+                            <p class="footertable__buy-total">
+                                Tổng tiền hàng ({{session.cart.totalQty}} sản phẩm)
+                                
+                            </p>
+                            <p class="footertable__buy-totalprice">
+                            {{session.cart.totalPrice}}
+                            </p>
+                           <a href="#" class="btnn btn-sell">Mua Ngay</a>
+
+                           </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>

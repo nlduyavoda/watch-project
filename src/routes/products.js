@@ -30,7 +30,7 @@ router.get("/cart", function (res, req, next) {
     return res.render("shop/cart", { products: null });
   }
   const cart = new Cart(req.session.cart);
-  res.render("shop/cart", { products: cart.generateArray() });
+  res.render("shop/cart", { products: cart.generateArray(),layout: 'detail.hbs' });
 });
 
 module.exports = router;

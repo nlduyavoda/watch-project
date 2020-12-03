@@ -50,7 +50,7 @@ class ProductsController {
 
     Products.findById(productId, function (err, Products) {
       if (err) {
-        return res.redirect("/");
+        return res.redirect("/",'detail.hbs');
       }
       cart.add(Products, Products.id);
       req.session.cart = cart;

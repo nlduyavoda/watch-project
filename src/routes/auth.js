@@ -55,13 +55,13 @@ router.get('/card-detail',function(req,res,next){
   if(!req.session.cart){
     console.log(req.session.cart)
     console.log(req.session.cart._id)
-        return res.render('shop/card-detail',{products:cart.generateArray()})
+        return res.render('shop/card-detail',{products:cart.generateArray(),layout: 'detail.hbs' })
   }
   var cart = new Cart(req.session.cart)
   console.log(req.session.cart)
   console.log(req.session.cart._id)
 
-  return res.render('shop/card-detail',{products:cart.generateArray()})
+  return res.render('shop/card-detail',{products:cart.generateArray(),layout: 'detail.hbs'})
 })
 module.exports = router;
  
